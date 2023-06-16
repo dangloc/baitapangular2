@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'changeFontSize';
+  currentUrl: string;
+
+  constructor(private router: Router) {
+    this.currentUrl = this.router.url;
+  }
+
+  ngOnInit() {
+  }
+
+  public getCurrentUrl(): string {
+    return this.router.url;
+  }
 }

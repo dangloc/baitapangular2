@@ -1,0 +1,26 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccc;
+  padding: 12px;
+
+
+  .logo{
+    text-decoration: none;
+    color: #fff;
+    h1{
+      font-weight: bold;
+      font-size: 60px;
+    }
+  }
+
+  .list__contact{
+    ul{
+      list-style: none;
+      padding: 0 12px;
+      li{
+        color: #fff;
+      }
+    }
+  }
+}

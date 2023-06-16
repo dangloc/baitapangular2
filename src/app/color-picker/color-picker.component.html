@@ -1,0 +1,13 @@
+<div class="color-picker">
+  <mat-form-field appearance="outline">
+    <mat-label>Selected Color</mat-label>
+    <input matInput [value]="selectedColor" readonly>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Choose Color</mat-label>
+    <input matInput [(ngModel)]="selectedColor" type="color">
+  </mat-form-field>
+
+  <h1>{{selectedColor}}</h1>
+</div>

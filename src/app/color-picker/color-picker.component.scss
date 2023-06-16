@@ -1,0 +1,11 @@
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 0 auto;
+
+  input{
+    padding: 12px;
+    height: 50px !important;
+  }
+}
